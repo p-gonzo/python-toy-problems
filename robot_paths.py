@@ -17,8 +17,6 @@ def toggle_piece(grid, y, x, val):
             grid[y][x] = 0
 
 def solve_grid(grid):
-    y = 0
-    x = 0
 
     shortest_path = None
 
@@ -63,8 +61,10 @@ grid =  [
     [0, 'x', 0, 0, 0],
     [0, 'x', 0, 'x', 0],
     [0, 'x', 0, 'x', 0],
+    [0, 'x', 0, 0, 0],
     [0, 'x', 0, 'x', 0],
-    [0, 0, 0, 'x', 0]
+    [0, 'x', 0, 'x', 0],
+    [0, 0, 0, 'x', 0],
 ]
 print_grid(solve_grid(grid))
 
