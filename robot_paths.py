@@ -33,6 +33,7 @@ def solve_grid(grid):
             grid[y][x] = 0
             return
 
+        # Base Case 2, only continue if the counter is less than the shortest path.
         if shortest_path is not None and shortest_path[-1][-1] < counter:
             return
         
